@@ -1,3 +1,9 @@
+def add(num1, num2):
+    return num1 + num2
+
+def divide(num1, num2):
+    return num1 / num2
+
 print("=== Math Calculator ===")
 print("Enter first number (num1 ≥ 0):")
 num1 = get_number_input()
