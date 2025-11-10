@@ -1,7 +1,16 @@
 def get_number_input():
-    value = float(input())
-    return value
+   while True:
+        try:
+            value = float(input())  # No prompt text
+        except ValueError:
+            print("  Error: Please enter a valid numeric value!")
+            continue
 
+        if value < 0:
+            print("  Error: Negative numbers are not allowed!")
+            continue
+    
+        return value
 def add(num1, num2):
     return num1 + num2
 
